@@ -309,6 +309,6 @@ By making our code more understandable
 
 - requrements.txt
 - create procfile
-    - `echo web: run.py > Procfile`
+    - `echo web: python run.py > Procfile`
 - create new heroku app
 - create config variables
