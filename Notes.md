@@ -302,5 +302,13 @@ By making our code more understandable
 
 [![Simplifying Our Code](http://img.youtube.com/vi/xzURhaMXjWY/0.jpg)](http://www.youtube.com/watch?v=xzURhaMXjWY)
 
+# heoku
+[![heroku](http://img.youtube.com/vi/URHT33CReYs/0.jpg)](http://www.youtube.com/watch?v=URHT33CReYs)
+
 ---
 
+- requrements.txt
+- create procfile
+    - `echo web: run.py > Procfile`
+- create new heroku app
+- create config variables
