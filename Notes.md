@@ -111,3 +111,196 @@ The code is correct in the Source Code link beneath this video.
 
 ---
 
+## Adding Timestamps
+
+![What is it](Markdown_Images/whatis.png "what is")
+
+## What is it
+
+A timestamp
+
+![What does it do](Markdown_Images/whatdoes.png "what does")
+
+## What does it do
+
+It will enable us to show the time at which the message was sent
+
+![How do you use it](Markdown_Images/howdo.png "how do")
+
+## How do you use it
+
+By using Python's datetime module
+
+[![Adding Timestamps](http://img.youtube.com/vi/f0UDl23pfLo/0.jpg)](http://www.youtube.com/watch?v=f0UDl23pfLo)
+
+---
+
+##  Creating An Index.Html Page
+
+![What is it](Markdown_Images/whatis.png "what is")
+
+## What is it
+
+The index.html page
+
+![What does it do](Markdown_Images/whatdoes.png "what does")
+
+## What does it do
+
+It will display a form that will ask users for a username
+
+![How do you use it](Markdown_Images/howdo.png "how do")
+
+## How do you use it
+
+By creating the HTML page and handling the form submission on the backend
+
+[![Creating An Index.Html Page](http://img.youtube.com/vi/CyaSQUjoIIU/0.jpg)](http://www.youtube.com/watch?v=CyaSQUjoIIU)
+
+---
+
+##  Creating Users
+
+![What is it](Markdown_Images/whatis.png "what is")
+
+## What is it
+
+Storing Users in a session variable
+
+![What does it do](Markdown_Images/whatdoes.png "what does")
+
+## What does it do
+
+Allows us to persist usernames in a browser session to automatically redirect users to their homepage
+
+![How do you use it](Markdown_Images/howdo.png "how do")
+
+## How do you use it
+
+By initialising a session and a variable
+
+[![Creating Users](http://img.youtube.com/vi/miakE-jDNzo/0.jpg)](http://www.youtube.com/watch?v=miakE-jDNzo)
+
+---
+
+##  Storing Our Messages In A Dict
+
+![What is it](Markdown_Images/whatis.png "what is")
+
+## What is it
+
+A dictionary
+
+![What does it do](Markdown_Images/whatdoes.png "what does")
+
+## What does it do
+
+Allows us to store data using Key/Value pairs
+
+![How do you use it](Markdown_Images/howdo.png "how do")
+
+## How do you use it
+
+my_dict = {}
+
+[![Storing Our Messages In A Dict](http://img.youtube.com/vi/3e7AjN9eBAg/0.jpg)](http://www.youtube.com/watch?v=3e7AjN9eBAg)
+
+---
+
+##  Refactoring To Use Chat.Html Instead Of A Single String
+
+![What is it](Markdown_Images/whatis.png "what is")
+
+## What is it
+
+An HTML file
+
+![What does it do](Markdown_Images/whatdoes.png "what does")
+
+## What does it do
+
+It will display our chat messages
+
+![How do you use it](Markdown_Images/howdo.png "how do")
+
+## How do you use it
+
+By passing it the necessary chat messages
+
+[![Refactoring To Use Chat.Html Instead Of A Single String
+](http://img.youtube.com/vi/Rq7rC3GYgQw/0.jpg)](http://www.youtube.com/watch?v=Rq7rC3GYgQw)
+
+---
+
+## Simple Long Polling With JavaScript
+
+![What is it](Markdown_Images/whatis.png "what is")
+
+## What is it
+
+Long polling
+
+![What does it do](Markdown_Images/whatdoes.png "what does")
+
+## What does it do
+
+Refreshes the page after a specified period of time
+
+![How do you use it](Markdown_Images/howdo.png "how do")
+
+## How do you use it
+
+By using JavaScript's setTimeout function
+
+[![Simple Long Polling With JavaScript](http://img.youtube.com/vi/o4qjxNvrpyw/0.jpg)](http://www.youtube.com/watch?v=o4qjxNvrpyw)
+
+---
+
+## Creating A Message Textbox
+
+![What is it](Markdown_Images/whatis.png "what is")
+
+## What is it
+
+A textbox to allow us to enter a message instead of using the URL
+
+![What does it do](Markdown_Images/whatdoes.png "what does")
+
+## What does it do
+
+Improves the functionality of our chat app
+
+![How do you use it](Markdown_Images/howdo.png "how do")
+
+## How do you use it
+
+By creating a textbox and using the POST form method
+
+[![Creating A Message Textbox](http://img.youtube.com/vi/3CntDFdJS7I/0.jpg)](http://www.youtube.com/watch?v=3CntDFdJS7I)
+
+---
+
+##  Simplifying Our Code
+
+![What is it](Markdown_Images/whatis.png "what is")
+
+## What is it
+
+Code refactoring
+
+![What does it do](Markdown_Images/whatdoes.png "what does")
+
+## What does it do
+
+Simplifies our code
+
+![How do you use it](Markdown_Images/howdo.png "how do")
+
+## How do you use it
+
+By making our code more understandable
+
+[![Simplifying Our Code](http://img.youtube.com/vi/xzURhaMXjWY/0.jpg)](http://www.youtube.com/watch?v=xzURhaMXjWY)
+
+---
+

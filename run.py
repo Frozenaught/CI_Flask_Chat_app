@@ -1,37 +1,43 @@
-from flask import Flask, redirect
+import os
+from datetime import datetime
+from flask import Flask, redirect, render_template, request, session, url_for
+
 
 app = Flask(__name__)
+app.secret_key = "randomstring123"
 messages = []
 
 
-def add_messages(username, message):
-    """Add messages to the messages list"""
-    messages.append(f"{username}: {message}")
+def add_message(username, message):
+    """Add messages to the `messages` list"""
+    now = datetime.now().strftime("%H:%M:%S")
+    messages.append({"timestamp": now, "from": username, "message": message})
 
 
-def get_all_messages():
-    """get all messages and separate using the `br>`"""
-    return '<br>'.join(messages)
-
-
-@app.route('/')
+@app.route("/", methods=["GET", "POST"])
 def index():
     """Main page with instructions"""
-    return 'To send a message use /USERNAME/MESSAGE'
+    if request.method == "POST":
+        session["username"] = request.form["username"]
+
+    if "username" in session:
+        return redirect(url_for("user", username=session["username"]))
+
+    return render_template("index.html")
 
 
-@app.route('/<username>')
-def username(username):
-    """Display chat messages"""
-    return f"<h1>Welcome, {username}</h1> {get_all_messages()}"
+@app.route("/chat/<username>", methods=["GET", "POST"])
+def user(username):
+    """Add and display chat messages"""
+    if request.method == "POST":
+        username = session["username"]
+        message = request.form["message"]
+        add_message(username, message)
+        return redirect(url_for("user", username=session["username"]))
+
+    return render_template("chat.html", username=username,
+                           chat_messages=messages)
 
 
-@app.route("/<username>/<message>")
-def send_message(username, message):
-    """Create a new message and redirect to the chat page"""
-    add_messages(username, message)
-    return redirect(f"/{username}")
-
-
-app.run()
-# app.run(host=os.getenv('IP'), port=int(os.getenv('PORT')), debug=True)
+app.run(host=os.getenv("IP", "0.0.0.0"),
+        port=int(os.getenv("PORT", "5000")), debug=False)
